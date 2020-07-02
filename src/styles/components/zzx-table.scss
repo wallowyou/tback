@@ -1,0 +1,26 @@
+
+.el-table {
+  .table-header-custom {
+    th {
+      background: #F2F2F2;
+    }
+  }
+  thead {
+    color: #327DDB;
+  }
+}
+
+.table-wrap {
+  background-color: #fff;
+  // padding: 0px 10px 10px;
+  min-height: 300px;
+  // padding-top: 15px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  .table-pagination {
+    text-align: center;
+    margin: 20px 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

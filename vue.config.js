@@ -36,6 +36,14 @@ module.exports = {
       warnings: false,
       errors: true
     },
+    proxy: {
+      // 配置实际开发的代理地址
+      '/console': {
+        target: 'http://59.110.63.141:8888',
+        secure: false,
+        changeOrigin: false
+      }
+    },
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {

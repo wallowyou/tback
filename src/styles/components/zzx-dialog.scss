@@ -1,0 +1,161 @@
+.dialog {
+  .el-form-item__label {
+    width:35px;
+    height:12px;
+    font-size:12px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(17,17,17,1);
+  }
+  .el-input__inner{
+    height: 26px;
+    line-height: 26px;
+  }
+}
+  .el-form-item {
+    margin-bottom: 0px;
+  }
+  .el-dialog__header{
+    width: 560px;
+    height: 50px;
+    background: rgba(50,125,219,1);
+    text-align: center;
+    .el-dialog__title {
+      line-height: 0.7;
+      font-size: 18px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(255,255,255,1);
+    }
+    .el-dialog__close {
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      border-radius: 50%;
+    }
+    // .modal-value {
+    //   color:rgba(17,17,17,1);
+    // }
+  }
+  .modal-body {
+    // 表单验证
+    .el-form-item__error {
+      padding-top: 0px;
+    }
+    .el-row {
+      margin-top: 15px;
+    }
+    .el-form-item__label {
+      // width:35px;
+      // height:12px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      // color:rgba(17,17,17,1);
+    }
+    .el-radio {
+      margin-right: 15px;
+    }
+    .el-row {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .el-input__inner{
+      height: 28px !important;
+      line-height: 26px;
+    }
+    .modal-input{
+      // width: 160px;
+      width: 100%;
+      border-radius: 3px;
+    }
+    .el-input__inner {
+      font-size: 12px;
+      padding: 0 10px;
+      font-family: PingFangSC-Regular;
+      // color: #111111;
+    }
+    .el-textarea {
+      font-size: 12px;
+      font-family: PingFangSC-Regular;
+    }
+    // .el-textarea__inner {
+    //   color: #111111;
+    // }
+    .modal-input-item{
+      width: 64% !important;
+      border-radius: 3px;
+    }
+    .modal-btn {
+      float: right;
+      margin-right: 12px;
+      width: 87px;
+    }
+    .dialog-footer{
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-end;
+      .el-button {
+        width: 87px;
+        height: 30px;
+        border-radius: 3px;
+        line-height: 0;
+      }
+    }
+  }
+  // 确认框样式
+  .custom-msgbox {
+    width: 560px;
+    height: 323px;
+    text-align: center;
+    border: none;
+    .el-message-box__btns {
+      padding: 20px 15px 0;
+    }
+    .el-message-box__header {
+      height: 50px;
+      background: rgba(50,125,219,1);
+      text-align: center;
+      color: #fff;
+        .el-message-box__title {
+          padding-left: 0;
+          margin-bottom: 0;
+          font-size: 18px;
+          line-height: 1.3;
+          color: #fff;
+      }
+      .el-message-box__close {
+        color: #fff;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+      }
+    }
+      .btn-cancel {
+        width: 87px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+      }
+      .btn-ok {
+        width:87px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+      }
+      .el-message-box__status {
+        position: relative;
+        font-size: 84px!important;
+        color: #F8AC74;
+        transform: translateY(0);
+        margin: 32px 0;
+      }
+    .el-message-box__status+.el-message-box__message {
+      padding: 0;
+      color: #111;
+      font-size: 24px;
+    }
+  }
+  

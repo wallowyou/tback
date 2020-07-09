@@ -87,7 +87,35 @@ module.exports = {
         symbolId: 'icon-[name]'
       })
       .end()
-
+    // 图片压缩
+    config.module
+      .rule('images')
+      .test(/\.(png|jpe?g|gif)(\?.*)?$/)
+      .use('image-webpack-loader')
+      .loader('image-webpack-loader')
+      .options({
+        bypassOnDebug: true,
+        mozjpeg: {
+          progressive: true,
+          quality: 65
+        },
+        // optipng.enabled: false will disable optipng
+        optipng: {
+          enabled: false
+        },
+        pngquant: {
+          quality: [0.65, 0.90],
+          speed: 4
+        },
+        gifsicle: {
+          interlaced: false
+        },
+        // the webp option will enable WEBP
+        webp: {
+          quality: 75
+        }
+      })
+      .end()
     config
       .when(process.env.NODE_ENV !== 'development',
         config => {

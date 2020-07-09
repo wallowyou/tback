@@ -55,6 +55,7 @@
       <el-table-column prop="totalMoney" label="总金额" align="center" />
       <el-table-column prop="check" label="核对" align="center" />
     </el-table>
+    <div class="test" />
   </div>
 </template>
 
@@ -145,6 +146,11 @@ export default {
 .el-table--border th.gutter:last-of-type {
     display: block!important;
     width: 17px!important;
-  }
+}
+.test {
+  width: 100%;
+  height: 600px;
+  background: url(../../assets/car.png) no-repeat;
+}
 </style>
 

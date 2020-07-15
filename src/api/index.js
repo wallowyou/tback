@@ -5,7 +5,11 @@ const getTaoList = (data = {}) => {
 const createAct = (data = {}) => {
   return post('/console/taogoldCreate', data)
 }
+const getActDetail = (taocode) => {
+  return get('/console/taogoldDetail', { taocode: taocode })
+}
 export default {
   getTaoList,
-  createAct
+  createAct,
+  getActDetail
 }
